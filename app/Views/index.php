@@ -29,6 +29,19 @@
                     <a class="nav-link" href="#">Pengaturan</a>
                 </li>
             </ul>
+            <div class="ml-auto navbar-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><?= session()->get('nama'); ?> <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="javascript::void(0)">| <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="<?= base_url('auth/logout'); ?>">Logout <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <script src="<?= base_url('assets/js/bootstrap.min.js'); ?>"></script>
