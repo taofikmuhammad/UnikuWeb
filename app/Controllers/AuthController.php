@@ -36,14 +36,15 @@ class AuthController extends BaseController
                 session()->set($sesdata);
                 return redirect()->to('/');
             } else {
-                session()->setFlashdata('eror', 'email/password tidak ditemukan');
-                return redirect()->back();
+                session()->setFlashdata('eror', 'nik/password tidak ditemukan');
+                return redirect()->to('/auth');
             }
         } else {
-            session()->setFlashdata('eror', 'email/password tidak ditemukan');
-            return redirect()->back();
+            session()->setFlashdata('eror', 'nik/password tidak ditemukan');
+            return redirect()->to('/auth');
         }
     }
+    
     public function logout()
     {
         session()->destroy();
