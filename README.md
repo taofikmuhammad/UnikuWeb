@@ -61,3 +61,7 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 - [mbstring](http://php.net/manual/en/mbstring.installation.php)
 - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
 - xml (enabled by default - don't turn it off)
+
+## Database Structure
+
+You can download database structure for this repository right here https://drive.google.com/file/d/1t1Y5Vf5R4eicDxX0qRreebi2ZdthA9m1/view?usp=sharing 
