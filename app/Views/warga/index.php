@@ -58,10 +58,17 @@
         </div>
       </div>
 
-      <h4>List Data Warga</h4>
+      <h4>LIST DATA WARGA</h4>
        <div class="container-fluid">
         <div class="row justify-content-md-left" style="bottom: 10px;">
             <div class="col-md-12 col-xs-12">
+                <div class="col-md-12">
+                        <?php if (session()->getFlashdata('pesan')) : ?>
+                            <div class="alert alert-success alert-dismissible">
+                                <?= session()->getFlashdata('pesan'); ?>
+                            </div>
+                        <?php endif ?>
+                    </div>
                 <div class="card">
                     <div class="card-body">
                         <div class="row" style="padding: 10px;">
