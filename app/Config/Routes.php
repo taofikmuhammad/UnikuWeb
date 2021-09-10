@@ -34,9 +34,12 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 
 
-$routes->get('/auth', 'AuthController::login');
+$routes->get('/auth', 'AuthController::logins');
 $routes->post('/auth', 'AuthController::prosesLogin');
 $routes->get('/auth/logout', 'AuthController::logout');
+
+$routes->resource('warga');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

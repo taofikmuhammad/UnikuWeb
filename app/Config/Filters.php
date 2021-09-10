@@ -40,6 +40,8 @@ class Filters extends BaseConfig
             'auth' => [
                 'except' => [
                     '/',
+                    'warga',
+					'warga/*',
                 ]
             ]
         ],
