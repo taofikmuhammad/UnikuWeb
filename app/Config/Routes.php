@@ -38,7 +38,7 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 
 
-$routes->get('/auth', 'AuthController::logins');
+$routes->get('/auth', 'AuthController::login');
 $routes->post('/auth', 'AuthController::prosesLogin');
 $routes->get('/auth/logout', 'AuthController::logout');
 
